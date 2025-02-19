@@ -1,3 +1,5 @@
+// JobScheduling
+
 import java.util.*;
 class Job{
 	int id;
@@ -40,6 +42,5 @@ public class JobScheduling{
 	}
 }
 
-/*
-OUTPUT: Total Profit: 142
-*/
+
+// OUTPUT: Total Profit: 142
