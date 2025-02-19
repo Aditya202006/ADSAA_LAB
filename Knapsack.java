@@ -1,3 +1,5 @@
+// KNAPSACK
+
 import java.util.*;
 class Item{
 	int weight,profit;
@@ -11,7 +13,12 @@ class Item{
 
 public class Knapsack{
 	public static double getMaxprofit(Item[] items,int m){
-		Arrays.sort(items,(a,b) -> Double.compare(b.ratio , a.ratio));
+		Arrays.sort(items,(a,b) -> Double.compare(b.ratio , a.ratio));Items placed in the bag: 
+Item: (Weight: 10, profit: 60) - Taken Fully
+Item: (Weight: 20, profit: 100) - Taken Fully
+Item: (Weight; 20.0,profit:80.0) - Taken 66.66666666666666%
+Maximum profit in knapsack: 240.0
+
 		double maxprofit = 0.0;
 		System.out.println("Items placed in the bag: ");
 		for(Item item : items){
@@ -36,3 +43,12 @@ public class Knapsack{
 	System.out.println("Maximum profit in knapsack: "+maxprofit);
 	}
 }
+
+/*
+OUTPUT: 
+Items placed in the bag: 
+Item: (Weight: 10, profit: 60) - Taken Fully
+Item: (Weight: 20, profit: 100) - Taken Fully
+Item: (Weight; 20.0,profit:80.0) - Taken 66.66666666666666%
+Maximum profit in knapsack: 240.0
+*/
